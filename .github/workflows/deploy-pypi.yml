@@ -30,7 +30,7 @@ jobs:
         run: python setup.py sdist bdist_wheel
 
       - name: Publish dist to PyPI
-        if: github.repository == 'nf-core/tools'
+        if: github.repository == 'nf-rhinosys/tools'
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           password: ${{ secrets.pypi_password }}

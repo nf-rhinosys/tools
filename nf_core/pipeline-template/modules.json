@@ -2,7 +2,7 @@
     "name": "{{ name }}",
     "homePage": "https://github.com/{{ name }}",
     "repos": {
-        "https://github.com/nf-core/modules.git": {
+        "https://github.com/nf-rhinosys/modules.git": {
             "modules": {
                 "nf-core": {
                     "custom/dumpsoftwareversions": {

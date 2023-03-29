@@ -218,7 +218,7 @@ class ModuleCreate(ComponentCommand):
         if self.process_label is None:
             log.info(
                 "Provide an appropriate resource label for the process, taken from the "
-                "[link=https://github.com/nf-core/tools/blob/master/nf_core/pipeline-template/conf/base.config#L29]nf-core pipeline template[/link].\n"
+                "[link=https://github.com/nf-rhinosys/tools/blob/master/nf_core/pipeline-template/conf/base.config#L29]nf-core pipeline template[/link].\n"
                 "For example: {}".format(", ".join(process_label_defaults))
             )
         while self.process_label is None:
@@ -234,7 +234,7 @@ class ModuleCreate(ComponentCommand):
                 "Where applicable all sample-specific information e.g. 'id', 'single_end', 'read_group' "
                 "MUST be provided as an input via a Groovy Map called 'meta'. "
                 "This information may [italic]not[/] be required in some instances, for example "
-                "[link=https://github.com/nf-core/modules/blob/master/modules/nf-core/bwa/index/main.nf]indexing reference genome files[/link]."
+                "[link=https://github.com/nf-rhinosys/modules/blob/master/modules/nf-core/bwa/index/main.nf]indexing reference genome files[/link]."
             )
         while self.has_meta is None:
             self.has_meta = rich.prompt.Confirm.ask(

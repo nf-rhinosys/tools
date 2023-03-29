@@ -458,7 +458,7 @@ def list(ctx):
 @click.option("-j", "--json", is_flag=True, help="Print as JSON to stdout")
 def remote(ctx, keywords, json):
     """
-    List modules in a remote GitHub repo [dim i](e.g [link=https://github.com/nf-core/modules]nf-core/modules[/])[/].
+    List modules in a remote GitHub repo [dim i](e.g [link=https://github.com/nf-rhinosys/modules]nf-core/modules[/])[/].
     """
     try:
         module_list = nf_core.modules.ModuleList(
@@ -1007,7 +1007,7 @@ def list(ctx):
 @click.option("-j", "--json", is_flag=True, help="Print as JSON to stdout")
 def remote(ctx, keywords, json):
     """
-    List subworkflows in a remote GitHub repo [dim i](e.g [link=https://github.com/nf-core/modules]nf-core/modules[/])[/].
+    List subworkflows in a remote GitHub repo [dim i](e.g [link=https://github.com/nf-rhinosys/modules]nf-core/modules[/])[/].
     """
     try:
         subworkflows_list = nf_core.subworkflows.SubworkflowList(
@@ -1168,7 +1168,7 @@ def list(ctx):
 @click.option("-j", "--json", is_flag=True, help="Print as JSON to stdout")
 def remote(ctx, keywords, json):
     """
-    List subworkflows in a remote GitHub repo [dim i](e.g [link=https://github.com/nf-core/modules]nf-core/modules[/])[/].
+    List subworkflows in a remote GitHub repo [dim i](e.g [link=https://github.com/nf-rhinosys/modules]nf-core/modules[/])[/].
     """
     try:
         subworkflow_list = nf_core.subworkflows.SubworkflowList(
@@ -1519,7 +1519,7 @@ def sync(dir, from_branch, pull_request, github_repository, username, template_y
     This command updates the [cyan i]TEMPLATE[/] branch with the latest version of
     the nf-core template, so that these updates can be synchronised with
     the pipeline. It is run automatically for all pipelines when ever a
-    new release of [link=https://github.com/nf-core/tools]nf-core/tools[/link] (and the included template) is made.
+    new release of [link=https://github.com/nf-rhinosys/tools]nf-core/tools[/link] (and the included template) is made.
     """
     # Check if pipeline directory contains necessary files
     nf_core.utils.is_pipeline_directory(dir)

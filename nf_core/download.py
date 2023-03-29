@@ -363,7 +363,7 @@ class DownloadWorkflow:
 
     def download_configs(self):
         """Downloads the centralised config profiles from nf-core/configs to :attr:`self.outdir`."""
-        configs_zip_url = "https://github.com/nf-core/configs/archive/master.zip"
+        configs_zip_url = "https://github.com/nf-rhinosys/configs/archive/master.zip"
         configs_local_dir = "configs-master"
         log.debug(f"Downloading {configs_zip_url}")
 
@@ -383,7 +383,7 @@ class DownloadWorkflow:
     def wf_use_local_configs(self):
         """Edit the downloaded nextflow.config file to use the local config files"""
         nfconfig_fn = os.path.join(self.outdir, "workflow", "nextflow.config")
-        find_str = "https://raw.githubusercontent.com/nf-core/configs/${params.custom_config_version}"
+        find_str = "https://raw.githubusercontent.com/nf-rhinosys/configs/${params.custom_config_version}"
         repl_str = "${projectDir}/../configs/"
         log.debug(f"Editing 'params.custom_config_base' in '{nfconfig_fn}'")
 

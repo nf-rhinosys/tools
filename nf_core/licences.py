@@ -57,7 +57,7 @@ class WorkflowLicences:
                 )
             self.conda_config = pipeline_obj.conda_config
         else:
-            env_url = f"https://raw.githubusercontent.com/nf-core/{self.pipeline}/master/environment.yml"
+            env_url = f"https://raw.githubusercontent.com/nf-rhinosys/{self.pipeline}/master/environment.yml"
             log.debug(f"Fetching environment.yml file: {env_url}")
             response = requests.get(env_url)
             # Check that the pipeline exists

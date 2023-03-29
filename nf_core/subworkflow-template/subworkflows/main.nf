@@ -4,8 +4,8 @@
 //               https://nf-co.re/join
 // TODO nf-core: A subworkflow SHOULD import at least two modules
 
-include { SAMTOOLS_SORT      } from '../../../modules/nf-core/samtools/sort/main'
-include { SAMTOOLS_INDEX     } from '../../../modules/nf-core/samtools/index/main'
+include { SAMTOOLS_SORT      } from '../../../modules/nf-rhinosys/samtools/sort/main'
+include { SAMTOOLS_INDEX     } from '../../../modules/nf-rhinosys/samtools/index/main'
 
 workflow {{ subworkflow_name|upper }} {
 
@@ -33,4 +33,3 @@ workflow {{ subworkflow_name|upper }} {
 
     versions = ch_versions                     // channel: [ versions.yml ]
 }
-

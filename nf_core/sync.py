@@ -332,15 +332,15 @@ class PipelineSync:
 
         pr_title = f"Important! Template update for nf-core/tools v{nf_core.__version__}"
         pr_body_text = (
-            "Version `{tag}` of [nf-core/tools](https://github.com/nf-core/tools) has just been released with updates to the nf-core template. "
+            "Version `{tag}` of [nf-core/tools](https://github.com/nf-rhinosys/tools) has just been released with updates to the nf-core template. "
             "This automated pull-request attempts to apply the relevant updates to this pipeline.\n\n"
             "Please make sure to merge this pull-request as soon as possible, "
             f"resolving any merge conflicts in the `{self.merge_branch}` branch (or your own fork, if you prefer). "
             "Once complete, make a new minor release of your pipeline.\n\n"
             "For instructions on how to merge this PR, please see "
             "[https://nf-co.re/developers/sync](https://nf-co.re/developers/sync#merging-automated-prs).\n\n"
-            "For more information about this release of [nf-core/tools](https://github.com/nf-core/tools), "
-            "please see the `v{tag}` [release page](https://github.com/nf-core/tools/releases/tag/{tag})."
+            "For more information about this release of [nf-core/tools](https://github.com/nf-rhinosys/tools), "
+            "please see the `v{tag}` [release page](https://github.com/nf-rhinosys/tools/releases/tag/{tag})."
         ).format(tag=nf_core.__version__)
 
         # Make new pull-request
@@ -410,7 +410,7 @@ class PipelineSync:
 
         # Make a new comment explaining why the PR is being closed
         comment_text = (
-            f"Version `{nf_core.__version__}` of the [nf-core/tools](https://github.com/nf-core/tools) pipeline template has just been released. "
+            f"Version `{nf_core.__version__}` of the [nf-core/tools](https://github.com/nf-rhinosys/tools) pipeline template has just been released. "
             f"This pull-request is now outdated and has been closed in favour of {self.pr_url}\n\n"
             f"Please use {self.pr_url} to merge in the new changes from the nf-core template as soon as possible."
         )

@@ -11,13 +11,13 @@ with open("requirements.txt") as f:
     required = f.read().splitlines()
 
 setup(
-    name="nf-core",
+    name="nf-rhinosys",
     version=version,
-    description="Helper tools for use with nf-core Nextflow pipelines.",
+    description="rhinosys-Helper tools for use with nf-core Nextflow pipelines.",
     long_description=readme,
     long_description_content_type="text/markdown",
     keywords=[
-        "nf-core",
+        "nf-rhinosys",
         "nextflow",
         "bioinformatics",
         "workflow",
@@ -29,7 +29,7 @@ setup(
     ],
     author="Phil Ewels",
     author_email="phil.ewels@scilifelab.se",
-    url="https://github.com/nf-core/tools",
+    url="https://github.com/nf-rhinosys/tools",
     license="MIT",
     entry_points={
         "console_scripts": ["nf-core=nf_core.__main__:run_nf_core"],

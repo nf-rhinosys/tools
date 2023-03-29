@@ -52,7 +52,7 @@ workflow {{ prefix_nodash|upper }}_{{ short_name|upper }} {
 
 //
 // WORKFLOW: Execute a single named workflow for the pipeline
-// See: https://github.com/nf-core/rnaseq/issues/619
+// See: https://github.com/nf-rhinosys/rnaseq/issues/619
 //
 workflow {
     {{ prefix_nodash|upper }}_{{ short_name|upper }} ()
